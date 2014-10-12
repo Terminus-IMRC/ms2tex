@@ -29,7 +29,7 @@ def main():
 
 		s=s.split()
 
-		if math.modf(math.sqrt(len(s)))[0]!=0:
+		if len(s)==0 or math.modf(math.sqrt(len(s)))[0]!=0:
 			error("invalid length of input line: " + str(len(s)))
 		Ceilings=len(s)
 		X=int(math.sqrt(Ceilings))
